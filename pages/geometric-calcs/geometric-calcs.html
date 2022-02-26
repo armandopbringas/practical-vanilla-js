@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="geometric-calcs.css">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <a href="../../index.html">Back to main nav</a>
+  </nav>
+  <script src="app.js"></script>
+  <main class="main-js-wrapper">
+    <h1>Geometric calcs</h1>
+    <section class="main-wrapper">
+      <h2>Square clacs</h2>
+      <form class="formwrapp">
+        <div>
+          <label for="">
+            Write each square side size
+          </label>
+          <input id="input" type="number" />
+        </div>
+        <div>
+          <button
+            type="button" 
+            onclick="calcSquareArea()"
+          >
+            Calc square area
+          </button>
+          <span id="areaRes"></span>
+        </div>
+        <div>
+          <button
+            type="button" 
+            onclick="calcSquarePerimeter()"
+          >
+            Calc square perimeter
+          </button>
+          <span id="perimeterRes"></span>
+        </div>
+      </form>
+    </section>
+
+    <section class="main-wrapper">
+      <h2>Triangle clacs</h2>
+      <form>
+        <input type="number" placeholder="Side Size A" id='inputA'>
+        <input type="number" placeholder="Side Size B" id='inputB'>
+        <input type="number" placeholder="Base Size" id='inputBase'>
+        <input type="number" placeholder="Height Size" id='inputHeight'>
+        <div class="buttons-wrapper">
+          <button type="button" onclick="calcTrianglePerimeter()">
+            Get triangle perimeter
+          </button>
+          <p id="outputPerimeter"></p>
+        </div>
+        <div class="buttons-wrapper">
+          <button type="button" onclick="calcTriangleArea()">
+            Get triangle area
+          </button>
+          <p id="outputArea"></p>
+        </div>
+      </form>
+    </section>
+
+    <section class="main-wrapper">
+      <h2>Circle clacs</h2>
+      <form>
+        <input type="number" placeholder="Radio size" id='inputDiameter'>
+        <input type="number" placeholder="Diameter size" id='inputRadio'>
+        <div class="buttons-wrapper">
+          <button type="button" onclick="calcCirclePerimeter()">
+            Get circle perimeter
+          </button>
+          <p id="outputCirlcePerimeter"></p>
+        </div>
+        <div class="buttons-wrapper">
+          <button type="button" onclick="calcCircleArea()">
+            Get circle area
+          </button>
+          <p id="outputCircleArea"></p>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  </main>
+  <script src="geometric-calcs.js"></script>
+</body>
+</html> 
